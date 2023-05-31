@@ -81,10 +81,10 @@ if (isset($_GET['sortc'])) {
 if (isset($_GET['sortr'])) {
     $sortr = $_GET['sortr'];    
     if ($sortr == 1) {
-        $order = " ORDER BY reihenfolge ASC";
+        $order = " ORDER BY capacity ASC";
         $sortr = 2;
     } else {
-        $order = " ORDER BY reihenfolge DESC";
+        $order = " ORDER BY capacity DESC";
         $sortr = 1;
     }
 } else {
