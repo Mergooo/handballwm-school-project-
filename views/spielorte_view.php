@@ -35,7 +35,7 @@ if(!empty($spielorte)) {
     <tr>
         <th><a href="./../controller/spielorte.php?sorta=<?php if(!empty($sorta)) {echo $sorta;}; ?>">Arena</a></th>
         <th><a href="./../controller/spielorte.php?sortc=<?php if(!empty($sortc)) {echo $sortc;}; ?>">Land</a></th>
-        <th><a href="./../controller/spielorte.php?sortc=<?php if(!empty($sortc)) {echo $sortc;}; ?>">Land</a></th>
+        <th><a href="./../controller/spielorte.php?sortr=<?php if(!empty($sortr)) {echo $sortr;}; ?>">Kapazität</a></th>
     </tr>
     <?php 
 
@@ -44,6 +44,7 @@ if(!empty($spielorte)) {
     <tr>
         <td><?php echo $spielort['arena']; ?></td>
         <td><?php echo $spielort['country']; ?></td>
+        <td><?php echo $spielort['capacity']; ?></td>
         <td><a href="./../controller/spielorte.php?del=<?php echo $spielort['id_spielort']; ?>"><img src="./../inc/pics/del.png" alt="löschen"></a></td>
     </tr>
     <?php } ?>
