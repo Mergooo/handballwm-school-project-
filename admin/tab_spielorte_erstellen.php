@@ -12,13 +12,13 @@ $sql = "CREATE TABLE spielorte (
 if ($stmt = $pdo->query($sql)) {
     echo "Die Tabelle wurde erfolgreich angelegt.<br>";
     $sql = "INSERT INTO spielorte (arena, country, capacity)
-            VALUES ('Spodek, Katowice', 'Polen', '11.036')";
+            VALUES ('Spodek, Katowice', 'Polen', '11036')";
     $stmt = $pdo->query($sql);
     $sql = "INSERT INTO spielorte (arena, country, capacity)
-            VALUES ('Tauron Arena Kraków, Krakau', 'Polen', '15.030')";
+            VALUES ('Tauron Arena Kraków, Krakau', 'Polen', '15030')";
     $stmt = $pdo->query($sql);
     $sql = "INSERT INTO spielorte (arena, country, capacity)
-            VALUES ('Scandinavium, Göteborg', 'Schweden', '12.000')";
+            VALUES ('Scandinavium, Göteborg', 'Schweden', '12000')";
     $stmt = $pdo->query($sql);
     
 };
