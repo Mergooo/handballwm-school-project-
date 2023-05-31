@@ -31,8 +31,14 @@ if (isset($_POST['speichern'])) {
     } else {
         $err[] = "Der Name des Landes muss angegeben werden.";
     }
-    if(!empty($_POST['arena']) and !empty($_POST['country'])) {
-        $sql = "INSERT INTO spielorte (arena, country) VALUES (?,?)";
+
+    If (!empty($_POST['capacity'])) {
+        $country = $_POST['capacity'];
+    } else {
+        $err[] = "Der Kapazität des Stadions muss angegeben werden.";
+    }
+    if(!empty($_POST['arena']) and !empty($_POST['country'])and !empty($_POST['capacity'])) {
+        $sql = "INSERT INTO spielorte (arena, country, capacity) VALUES (?,?,?)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([$arena, $country]);
         $meldung_speichern = "Der Spielort $arena in $country wurde erfolgreich gespeichert";
