@@ -11,7 +11,7 @@ $sql = "CREATE TABLE spielorte (
 
 if ($stmt = $pdo->query($sql)) {
     echo "Die Tabelle wurde erfolgreich angelegt.<br>";
-    $sql = "INSERT INTO spielorte (arena, country)
+    $sql = "INSERT INTO spielorte (arena, country, capacity)
             VALUES ('Spodek, Katowice', 'Polen')";
     $stmt = $pdo->query($sql);
     $sql = "INSERT INTO spielorte (arena, country)
