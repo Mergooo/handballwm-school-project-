@@ -5,7 +5,8 @@ include "./../inc/functions/connection.php";
 $sql = "CREATE TABLE spielorte (
     id_spielort INTEGER(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     arena VARCHAR(100),
-    country VARCHAR (50)
+    country VARCHAR (50),
+    capacity int (11)
 )";
 
 if ($stmt = $pdo->query($sql)) {
