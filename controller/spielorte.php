@@ -78,6 +78,20 @@ if (isset($_GET['sortc'])) {
     $sortc = 1;
 }
 
+if (isset($_GET['sortr'])) {
+    $sortr = $_GET['sortr'];    
+    if ($sortr == 1) {
+        $order = " ORDER BY reihenfolge ASC";
+        $sortr = 2;
+    } else {
+        $order = " ORDER BY reihenfolge DESC";
+        $sortr = 1;
+    }
+} else {
+    $sortr = 1;
+}
+
+
 
 $table = "spielorte";
 $sql = "SELECT * FROM $table" . $order;
