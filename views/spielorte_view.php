@@ -35,6 +35,7 @@ if(!empty($spielorte)) {
     <tr>
         <th><a href="./../controller/spielorte.php?sorta=<?php if(!empty($sorta)) {echo $sorta;}; ?>">Arena</a></th>
         <th><a href="./../controller/spielorte.php?sortc=<?php if(!empty($sortc)) {echo $sortc;}; ?>">Land</a></th>
+        <th><a href="./../controller/spielorte.php?sortc=<?php if(!empty($sortc)) {echo $sortc;}; ?>">Land</a></th>
     </tr>
     <?php 
 
