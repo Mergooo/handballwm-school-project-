@@ -25,6 +25,7 @@ include "header.php";
 <form action="./../controller/spielorte.php" method="POST">
     Spielort: <input type="text" name="arena">
     Land: <input type="text" name="country">
+    Kapazität: <input type="capacity" name="Kapazität">
     <input type="submit" name="speichern" value="Spielort speichern">
 </form>
 
